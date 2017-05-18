@@ -5,6 +5,7 @@ version = "0.1.0"
 
 [dependencies]
 itertools = "0.5.1"
+lazy_static = "0.2.8"
 owned_chars = "0.1.1"
 permutohedron = "0.2.1"
 rayon = "0.4.0"
