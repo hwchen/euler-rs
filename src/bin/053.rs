@@ -19,7 +19,8 @@ fn choose(n: usize, r: usize) -> usize {
     let diff = (n-r).to_string().parse::<BigNum>().unwrap();
     let n = n.to_string().parse::<BigNum>().unwrap();
     let r = r.to_string().parse::<BigNum>().unwrap();
-    n.fac() / (r.fac() * (diff).fac())
+    //n.fac() / (r.fac() * (diff).fac())
+    0
 }
 
 fn main() {

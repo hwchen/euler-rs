@@ -24,7 +24,7 @@ fn substring_tests(digits: &[usize]) -> bool {
 }
 
 fn main() {
-    let mut digits: Vec<_> = (0...9).collect();
+    let mut digits: Vec<_> = (0..=9).collect();
     let pandigitals = Heap::new(&mut digits);
 
     let sum_sub_pandigitals: usize = pandigitals
