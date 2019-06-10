@@ -1,4 +1,3 @@
-#![feature(inclusive_range_syntax)]
 // sub-string pandigital
 //
 // Test to see if permutation or filter is faster for getting pandigitals
@@ -15,13 +14,13 @@ use euler::digits_to_int;
 use permutohedron::Heap;
 
 fn substring_tests(digits: &[usize]) -> bool {
-    digits_to_int(&digits[1...3]) % 2 == 0 &&
-    digits_to_int(&digits[2...4]) % 3 == 0 &&
-    digits_to_int(&digits[3...5]) % 5 == 0 &&
-    digits_to_int(&digits[4...6]) % 7 == 0 &&
-    digits_to_int(&digits[5...7]) % 11 == 0 &&
-    digits_to_int(&digits[6...8]) % 13 == 0 &&
-    digits_to_int(&digits[7...9]) % 17 == 0 
+    digits_to_int(&digits[1..=3]) % 2 == 0 &&
+    digits_to_int(&digits[2..=4]) % 3 == 0 &&
+    digits_to_int(&digits[3..=5]) % 5 == 0 &&
+    digits_to_int(&digits[4..=6]) % 7 == 0 &&
+    digits_to_int(&digits[5..=7]) % 11 == 0 &&
+    digits_to_int(&digits[6..=8]) % 13 == 0 &&
+    digits_to_int(&digits[7..=9]) % 17 == 0 
 }
 
 fn main() {

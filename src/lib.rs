@@ -1,4 +1,3 @@
-#![feature(conservative_impl_trait)]
 // TODO switch all to usize!)
 extern crate owned_chars;
 
