@@ -1,4 +1,3 @@
-#![feature(step_by)]
 // goldbach conjecture
 //
 // find smallest odd composite number that can't be written as sum of prime and twice a square.
