@@ -21,7 +21,7 @@ fn spiral_sum(n: usize) -> usize {
     }
 
     (n.pow(2) as isize..)
-        .step_by(-1 * (n-1) as isize)
+        .step_by(-1 * (n-1))
         .take(4)
         .fold(0, |sum, x| {
             sum + (x as usize)
